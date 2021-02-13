@@ -1,0 +1,113 @@
+.list-group-item { 
+    background: transparent;
+}
+.input-group-search {
+    max-width: 460px;
+}
+.input-search {
+    color: #3D1101;
+    max-width: 460px;
+}
+.icon-search {
+    background-color: #3D1101;
+    color: #fff;
+}
+.input-search, .icon-search  {
+    border: 2px solid #3D1101;
+}
+.cart-icon { 
+    font-size: 25px; 
+}
+.cart-text { 
+    border-right: 1px solid #3D1101;
+}
+.cart-num {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.card-product {
+    text-align: center;
+    color: #3D1101;
+    background-color: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+.card-product .card-body {
+    padding: 1rem 0.5rem;
+}
+.card-product-text {
+    width: 90px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 1px solid;
+}
+.product-price {
+    font-style: italic;
+}
+.product-price::before {
+    content: "$";
+    font-style: normal;
+}
+.btn-addcart {
+    border: 2px solid #FF5E45;
+    width: 100%;
+}
+.product-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+}
+.classic-img{
+    background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_1.png);
+}
+.sausage-img {
+    background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_2.png);
+}
+.hamburger-bro-img {
+    background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_3.png);
+}
+.package-img{
+    background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/product_4.png);
+}
+.icon-heart {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+}
+
+/* ribbon */
+.ribbon-wrap{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+    top: -7px;
+    right: -8px;
+}
+.ribbon {
+    position: relative;
+    left: 5px;
+    top: 15px;
+    width: 110px;
+    background-color: #00CC99;
+    color: #FFFFFF;
+    padding: 5px 0;
+    text-align: center;
+    transform: rotate(-315deg);
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+    font-size: 14px;
+    font-weight: 600;
+}
+.ribbon:before, .ribbon:after {
+    content: "";
+    border-top: 4px solid #078F6D;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    bottom: -4px;
+}
+.ribbon:before { left: 0; }
+.ribbon:after { right: 0; }

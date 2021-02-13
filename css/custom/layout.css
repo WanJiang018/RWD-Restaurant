@@ -1,0 +1,283 @@
+/* layout */
+.wrap {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  font-family: '微軟正黑體', 'Microsoft JhengHei', serif;
+  font-size: 16px;
+  color: #3d1101;
+  background: #efe9e7;
+}
+
+/* navbar */
+.navbar-dark,.navbar-collapse {
+  background: rgba(0, 0, 0, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #f56c23;
+}
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #f56c23;
+}
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-text {
+  color: #fff;
+}
+.navbar-dark .navbar-text a,
+.navbar-dark .navbar-text a:hover,
+.navbar-dark .navbar-text a:focus {
+  color: #f56c23;
+}
+.navbar-collapse {
+  position: absolute;
+  top: 56px;  
+  left: 0px;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem;
+}
+@media (min-width: 576px) {
+  .navbar-collapse {
+    position: relative;
+    top: 0;  
+  }
+  .navbar-collapse{
+    background: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+  }  
+}
+
+/* banner */
+.banner {
+  background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/header_desktop.png);
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  position: relative;
+  bottom: 56px;
+  margin-bottom: -56px;
+  z-index: -1;
+}
+@media (min-width: 576px) {
+  .banner {
+    background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/header_desktop.png);
+  }
+}
+
+.banner-textarea {
+  background: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  max-width: 480px;
+  text-align: center;
+  position: relative;
+  top: calc(210px - 56px);
+}
+
+
+/* link */
+a {
+  color: #3d1101;
+  text-decoration: none;
+}
+a:hover {
+  color: #f56c23;
+}
+a.text-orange:hover {
+  color: #a83e05;
+}
+.icon-link:hover {
+  color:rgb(206, 194, 194, 0.9)
+}
+.btn > a {
+  color: inherit;
+}
+
+/* list */
+ul {
+  padding-left: 1.3rem;
+}
+.list-group-item {
+  border: 1px solid #3d1101;
+}
+.list-group-item-action{  
+  color: #3d1101;
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+  z-index: 1;
+  color: #3d1101;
+  text-decoration: none;
+  background-color:rgb(206, 194, 194, 0.4)
+}
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #3d1101;
+  border-color: #3d1101;
+}
+.list-group-item.active > .badge{
+  color: #3d1101;
+  background-color: #fff;
+}
+/* form */
+.form-control:focus,.form-check-input:focus {
+  border-color: #F56C23;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(240, 94, 15, 0.2);
+}
+.form-check-input:checked {
+  background-color: #F56C23;
+  border-color: #F56C23;
+}
+
+/* input */
+.input-with-icon {
+  padding-left: 30px;
+}
+.icon-input {
+  color: rgba(61,17,0,0.50);;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* button */
+.btn-confirm {
+  color: #fff;
+  background-color: #F56C23;
+  border-color: #F56C23;
+}
+.btn-confirm:hover {
+  color: #fff;
+  background-color: #a83e05;
+  border-color: #a83e05;
+}
+.btn-check:focus + .btn-confirm, .btn-confirm:focus {
+  color: #fff;
+  background-color: #a83e05;
+  border-color: #a83e05;
+  box-shadow: 0 0 0 0.25rem rgb(240, 94, 15, 0.5);
+}
+.btn-check:checked + .btn-confirm, .btn-check:active + .btn-confirm, .btn-confirm:active, .btn-confirm.active, .show > .btn-confirm.dropdown-toggle {
+  color: #fff;
+  background-color: #a83e05;
+  border-color: #a83e05;
+}
+.btn-check:checked + .btn-confirm:focus, .btn-check:active + .btn-confirm:focus, .btn-confirm:active:focus, .btn-confirm.active:focus, .show > .btn-confirm.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgb(240, 94, 15, 0.5);
+}
+.btn-confirm:disabled, .btn-confirm.disabled {
+  color: #fff;
+  background-color: #F56C23;
+  border-color: #F56C23;
+}
+
+.btn-cancel {
+  color: #fff;
+  background-color: rgba(0,0,0,0.35);
+  border-color: rgba(0,0,0,0.35);
+}
+.btn-cancel:hover {
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  border-color: rgba(0,0,0,0.6);
+}
+
+.btn-outline-confirm {
+  color: #F56C23;
+  border-color: #F56C23;
+}
+.btn-outline-confirm:hover {
+  color: #fff;
+  background-color: #F56C23;
+  border-color: #F56C23;
+}
+.btn-check:focus + .btn-outline-confirm, .btn-outline-confirm:focus {
+  box-shadow: 0 0 0 0.25rem rgb(240, 94, 15, 0.5);
+}
+.btn-check:checked + .btn-outline-confirm, .btn-check:active + .btn-outline-confirm, .btn-outline-confirm:active, .btn-outline-confirm.active, .btn-outline-confirm.dropdown-toggle.show {
+  color: #fff;
+  background-color: #F56C23;
+  border-color: #F56C23;
+}
+.btn-check:checked + .btn-outline-confirm:focus, .btn-check:active + .btn-outline-confirm:focus, .btn-outline-confirm:active:focus, .btn-outline-confirm.active:focus, .btn-outline-confirm.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgb(240, 94, 15, 0.5);
+}
+.btn-outline-confirm:disabled, .btn-outline-confirm.disabled {
+  color: #F56C23;
+  background-color: transparent;
+}
+
+.btn-check:focus + .btn-cancel, .btn-cancel:focus {
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  border-color: rgba(0,0,0,0.6);
+  box-shadow: 0 0 0 0.25rem rgb(0, 0, 0, 0.5);
+}
+.btn-check:checked + .btn-cancel, .btn-check:active + .btn-cancel, .btn-cancel:active, .btn-cancel.active, .show > .btn-cancel.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  border-color: rgba(0,0,0,0.6);
+}
+.btn-check:checked + .btn-cancel:focus, .btn-check:active + .btn-cancel:focus, .btn-cancel:active:focus, .btn-cancel.active:focus, .show > .btn-cancel.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgb(0, 0, 0, 0.5);
+}
+.btn-cancel:disabled, .btn-cancel.disabled {
+  color: #fff;
+  background-color: rgba(0,0,0,0.35);
+  border-color: rgba(0,0,0,0.35);
+}
+
+/* background */
+.bg-brown {
+  background-color: #3d1101;
+}
+.bg-orange {
+  background-color: #F56C23;
+}
+
+/* text */
+.text-orange {
+  color: #F56C23;
+}
+
+/* footer */
+.icon-social {
+  font-size: 32px;
+}
+.icon-social:hover {
+  opacity: 0.7;
+}
+.icon-gplus {
+  color: #db4437;
+}
+.icon-twitter {
+  color: #41abe1;
+}
+.icon-facebook {
+  color: #3a5795;
+}
+
+/* logo */
+.w-logo {
+  display: block;
+  width: 137px;
+}

@@ -1,0 +1,18 @@
+.card-auth {
+    margin: 0 auto;
+    text-align: center;
+    color: #3D1101;
+    background-color: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;;
+}
+.card-login{ 
+    max-width: 300px; 
+}
+.card-register{ 
+    max-width: 620px;
+}
+.form-auth-title {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
